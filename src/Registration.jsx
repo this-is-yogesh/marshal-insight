@@ -11,9 +11,9 @@ const initialValues = {
   customer: "",
   arr: "",
   insightheadline: "",
-  insightsituation:"",
-  supportingdata:"",
-  impact:""
+  insightsituation: "",
+  supportingdata: "",
+  impact: "",
 };
 
 const Registration = () => {
@@ -44,12 +44,12 @@ const Registration = () => {
               <div className="modal-left">
                 <h1 className="modal-title">Welcome!</h1>
                 <p className="modal-desc">
-                 Create an <b>Customer Highlight</b>  insight
+                  Create a <b>Customer Highlight</b> insight
                 </p>
                 <form onSubmit={handleSubmit}>
                   <div className="input-block">
                     <label htmlFor="title" className="input-label">
-                     Title
+                      Title
                     </label>
                     <input
                       type="name"
@@ -67,7 +67,7 @@ const Registration = () => {
                   </div>
                   <div className="input-block">
                     <label htmlFor="customer" className="input-label">
-                     Customer
+                      Customer
                     </label>
                     <input
                       type="text"
@@ -103,7 +103,7 @@ const Registration = () => {
                   </div>
                   <div className="input-block">
                     <label htmlFor="insightheadline" className="input-label">
-                    Insight Headline('The What')
+                      Insight Headline('The What')
                     </label>
                     <input
                       type="text"
@@ -115,13 +115,13 @@ const Registration = () => {
                       onChange={handleChange}
                       onBlur={handleBlur}
                     />
-                    {errors.insightheadline && touched.insightheadline? (
+                    {errors.insightheadline && touched.insightheadline ? (
                       <p className="form-error">{errors.insightheadline}</p>
                     ) : null}
                   </div>
                   <div className="input-block">
                     <label htmlFor="insightsituation" className="input-label">
-                     Insight Situation ('The Why')
+                      Insight Situation ('The Why')
                     </label>
                     <input
                       type="text"
@@ -139,7 +139,8 @@ const Registration = () => {
                   </div>
                   <div className="input-block">
                     <label htmlFor="supportingdata" className="input-label">
-                    Supporting Data</label>
+                      Supporting Data
+                    </label>
                     <input
                       type="text"
                       autoComplete="off"
@@ -156,7 +157,8 @@ const Registration = () => {
                   </div>
                   <div className="input-block">
                     <label htmlFor="impact" className="input-label">
-                    Impact</label>
+                      Impact
+                    </label>
                     <input
                       type="text"
                       autoComplete="off"
@@ -184,26 +186,52 @@ const Registration = () => {
                   Already have an account? <a href="#">Sign In now</a>
                 </p>
               </div>
-              <div className="modal-right" >
+              <div className="modal-right">
                 {/* <img
                   src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dfd2ec5a01006fd8c4d7592a381d3776&auto=format&fit=crop&w=1000&q=80"
                   alt=""
                 /> */}
                 <p>
-                  <h2 className="modal-title">  Tips :</h2>
+                  <h2 className="modal-title"> Tips :</h2>
                   <ol>
-                  <li> You agree to waive your right to be identified as the author of such content and your right to object to derogatory treatment of such content. </li>
-                  <li> The total price in single figure of any good or service, along with the breakup price for the good or service, showing all the compulsory and voluntary charges such as delivery charges, postage and handling charges, conveyance charges and the applicable tax, as applicable. </li>
-                  <li> Importer and the guarantees related to the authenticity or genuineness of the imported products; and.
-guarantees or warranties applicable to such goods or services. </li>
-                  <li> All software used on this website is the property of Amazon Seller Services Private Limited, its affiliates or its software suppliers and is protected by India and international copyright and author' rights laws.</li>
-                  <li> You acknowledge and undertake that you are accessing the services on the website and transacting at your own risk and are using your best and prudent judgment before entering into any transactions through the website.</li>
-                  </ol> 
+                    <li>
+                      {" "}
+                      You agree to waive your right to be identified as the
+                      author of such content and your right to object to
+                      derogatory treatment of such content.{" "}
+                    </li>
+                    <li>
+                      {" "}
+                      The total price in single figure of any good or service,
+                      along with the breakup price for the good or service,
+                      showing all the compulsory and voluntary charges such as
+                      delivery charges, postage and handling charges, conveyance
+                      charges and the applicable tax, as applicable.{" "}
+                    </li>
+                    <li>
+                      {" "}
+                      Importer and the guarantees related to the authenticity or
+                      genuineness of the imported products; and. guarantees or
+                      warranties applicable to such goods or services.{" "}
+                    </li>
+                    <li>
+                      {" "}
+                      All software used on this website is the property of
+                      Amazon Seller Services Private Limited, its affiliates or
+                      its software suppliers and is protected by India and
+                      international copyright and author' rights laws.
+                    </li>
+                    <li>
+                      {" "}
+                      You acknowledge and undertake that you are accessing the
+                      services on the website and transacting at your own risk
+                      and are using your best and prudent judgment before
+                      entering into any transactions through the website.
+                    </li>
+                  </ol>
 
-                  <Dropdown/>
+                  <Dropdown />
                 </p>
-   
-  
               </div>
             </div>
           </div>
